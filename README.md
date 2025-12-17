@@ -31,6 +31,7 @@ This repository contains:
 - The full FAERS data pipeline
 - Shiny dashboard source code
 - Deployment-related files and configuration
+- Essential shared data artifacts for grading (`shared_data/`)
 
 ---
 
