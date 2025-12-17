@@ -58,6 +58,20 @@ mechanism comparisons, and temporal safety signals.
 
 ---
 
+## Database Access Note
+
+Due to the large size of the cleaned SQLite database, pushing the database file
+directly to a GitHub repository may cause repository performance and stability
+issues. Therefore, the database has been uploaded to Google Drive for access
+during grading:
+
+https://drive.google.com/file/d/1At-ARdrPf8VsUB_02KgnnJ7bYRZ-mXGN/view?usp=drive_link
+
+(We have emailed Stephanie Hicks and received confirmation that this approach is
+acceptable and will not result in any point deduction.)
+
+---
+
 ## Data Pipeline (`scripts/`)
 
 The `scripts/` directory contains the complete FAERS data processing pipeline.
