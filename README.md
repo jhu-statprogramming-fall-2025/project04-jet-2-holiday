@@ -82,6 +82,8 @@ mechanism comparisons, and temporal safety signals.
   - `pseudo_soc_map_top.csv`: curated mapping from MedDRA Preferred Terms (PTs)
     to pseudo System Organ Class (SOC) categories, used in
     `step8-pseudo-soc.R` and throughout the dashboard.
+  - Note: `temporal_cache.rds` and `pseudo_soc_map_top.csv` are already tracked
+    in this repo; download `faers.sqlite` from the Google Drive link above.
 
 ---
 
@@ -141,5 +143,5 @@ version control.
   GitHub Classroom repository.
 - Large data files are excluded due to size limitations but can be regenerated
   by running the pipeline scripts in order.
-- Shiny application code and deployment are maintained separately, following
-  course submission instructions.
+- The cleaned SQLite database (`faers.sqlite`) is stored on Google Drive (see
+  Data Availability & Local Setup).
