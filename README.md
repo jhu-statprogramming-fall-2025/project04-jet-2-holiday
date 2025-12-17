@@ -58,17 +58,29 @@ mechanism comparisons, and temporal safety signals.
 
 ---
 
-## Database Access Note
+## Data Availability & Local Setup
 
-Due to the large size of the cleaned SQLite database, pushing the database file
-directly to a GitHub repository may cause repository performance and stability
-issues. Therefore, the database has been uploaded to Google Drive for access
-during grading:
+**Database Availability & Access**
+- The cleaned FAERS SQLite database is substantially large and is therefore not
+  stored directly in the GitHub repository to avoid performance and stability
+  issues.
+- Instead, the database is hosted on Google Drive and can be accessed via:
+  https://drive.google.com/file/d/1At-ARdrPf8VsUB_02KgnnJ7bYRZ-mXGN/view?usp=drive_link
+- We have contacted the course instructor (Stephanie Hicks) and received explicit
+  confirmation that this data-sharing approach is acceptable and will not result
+  in any point deduction.
 
-https://drive.google.com/file/d/1At-ARdrPf8VsUB_02KgnnJ7bYRZ-mXGN/view?usp=drive_link
-
-(We have emailed Stephanie Hicks and received confirmation that this approach is
-acceptable and will not result in any point deduction.)
+**Local Setup for Grading and Reproducibility**
+- Create a folder named `shared_data/` at the project root and place the
+  downloaded files there.
+- The `shared_data/` folder should contain exactly three files:
+  - `faers.sqlite`: fully cleaned, analysis-ready FAERS SQLite database used by
+    all scripts and the Shiny dashboard.
+  - `temporal_cache.rds`: precomputed temporal summaries to avoid rerunning
+    computationally expensive time-series aggregations.
+  - `pseudo_soc_map_top.csv`: curated mapping from MedDRA Preferred Terms (PTs)
+    to pseudo System Organ Class (SOC) categories, used in
+    `step8-pseudo-soc.R` and throughout the dashboard.
 
 ---
 
