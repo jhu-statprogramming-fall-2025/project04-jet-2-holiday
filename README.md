@@ -74,16 +74,13 @@ mechanism comparisons, and temporal safety signals.
 **Local Setup for Grading and Reproducibility**
 - Create a folder named `shared_data/` at the project root and place the
   downloaded files there.
-- The `shared_data/` folder should contain exactly three files:
+- The `shared_data/` folder should contain:
   - `faers.sqlite`: fully cleaned, analysis-ready FAERS SQLite database used by
     all scripts and the Shiny dashboard.
-  - `temporal_cache.rds`: precomputed temporal summaries to avoid rerunning
-    computationally expensive time-series aggregations.
   - `pseudo_soc_map_top.csv`: curated mapping from MedDRA Preferred Terms (PTs)
     to pseudo System Organ Class (SOC) categories, used in
-    `step8-pseudo-soc.R` and throughout the dashboard.
-  - Note: `temporal_cache.rds` and `pseudo_soc_map_top.csv` are already tracked
-    in this repo; download `faers.sqlite` from the Google Drive link above.
+    `step8-pseudo-soc.R` and throughout the dashboard. This file remains tracked.
+  Download `faers.sqlite` from the Google Drive link above before running scripts.
 
 ---
 
